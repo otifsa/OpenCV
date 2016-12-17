@@ -31,7 +31,7 @@ int main(){
 	  Canny( src, dst, 20, 50, 3);
 	  imshow("edge",dst);
 	vector<Vec2f> lines;
-    HoughLines(dst, lines, 1, CV_PI/180, 100, 0, 0 );
+    HoughLines(dst, lines, 1, CV_PI/180, 90, 0, 0 );
 
 for( int i = 0; i < lines.size(); i++ )
     {   
